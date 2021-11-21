@@ -1,0 +1,17 @@
+dependencies {
+    api platform("ru.sovcombank:omp-bom:1.0.0-testfsadf1")
+    api("ru.sovcombank:online-banking-kafka-starter")
+
+    compileOnly("org.projectlombok:lombok:${lombokVersion}")
+    annotationProcessor("org.projectlombok:lombok:${lombokVersion}")
+
+    runtimeOnly("io.micrometer:micrometer-registry-prometheus")
+
+    testImplementation("io.projectreactor.tools:blockhound:1.0.6.RELEASE")
+    testImplementation('io.projectreactor:reactor-test')
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+    testImplementation("io.rest-assured:rest-assured:$restAssuredVersion")
+    testImplementation("org.springframework.cloud:spring-cloud-contract-wiremock")
+    api("ru.sovcombank.clients:online-banking-gateway-autoresponses-client:${gatewayAutoresponsesClientVersion}")
+    testCompile("ru.sovcombank:online-banking-common-tests")
+}
