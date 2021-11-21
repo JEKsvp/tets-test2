@@ -1,5 +1,5 @@
 dependencies {
-    api platform("ru.sovcombank:omp-bom:1.0.5}")
+    api platform("ru.sovcombank:omp-bom:1.0.9}")
     api("ru.sovcombank:online-banking-kafka-starter")
 
     compileOnly("org.projectlombok:lombok:${lombokVersion}")
